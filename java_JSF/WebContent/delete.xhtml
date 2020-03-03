@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+	<h:body>
+	
+	<ui:composition template="template.xhtml">
+		<br/>
+		<ui:define name="title">Warehouse Management</ui:define>
+		<br/>
+		<ui:define name="top"><h3>Warehouse Management</h3></ui:define>
+		<br/>
+		<ui:define name="left">t</ui:define>
+		
+		<ui:define name="content">
+			<f:view>
+			    <h:form>
+			        <h:panelGrid columns="2">
+			            <h:outputText value='Enter product type'/>
+				      	<h:selectOneRadio value = '#{dto.product_type}'> 
+	   						<f:selectItem itemValue = "cancelleria" itemLabel = "cancelleria" /> 
+	   						<f:selectItem itemValue = "informatica" itemLabel = "informatica" />
+	   						<f:selectItem itemValue = "elettronica" itemLabel = "elettronica" />
+	   						<f:selectItem itemValue = "ferramenta" itemLabel = "ferramenta" />
+						</h:selectOneRadio>   
+			            
+			              <h:outputText value='Enter name of product'/>
+			            <h:inputText value='#{dto.name_of_product}'/>
+			            
+			            <h:outputText value='Enter quantity'/>
+			            <h:inputText value='#{dto.product_quantity}'/>
+			            
+			            <h:commandButton action="#{service.delete}" value="Delete"/>
+			        </h:panelGrid>
+			    </h:form>
+			</f:view>
+		</ui:define>	
+		
+	</ui:composition>
+	
+		
+		
+	</h:body>
+
+</html>

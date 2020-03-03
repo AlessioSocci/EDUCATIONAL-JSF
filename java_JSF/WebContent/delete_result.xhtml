@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head>
+
+</h:head> 
+
+<h:body> 
+	<ui:composition template="template.xhtml">
+		<br/>
+		<ui:define name="title">Warehouse Management</ui:define>
+		<br/>
+		<ui:define name="top"><h3>Warehouse Management</h3></ui:define>
+		<br/>
+		<ui:define name="left"></ui:define>
+		
+		<ui:define name="content">	
+			<br/>
+			<h:outputText value="#{service.delete_result}  #{dto.getName_of_product()}"/>
+			<br/>
+			<h:outputText value="in product type: #{dto.getProduct_type()}"/>
+		
+		</ui:define>			
+	</ui:composition>
+
+</h:body> 
+
+</html>

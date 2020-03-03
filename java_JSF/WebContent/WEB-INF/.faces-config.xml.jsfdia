@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#search_result.xhtml"
+  PATH="/search_result.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#search.xhtml" PATH="/search.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#search.xhtml:0" NAME="item"
+   PATH="/search.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="search_result::#search_result.xhtml"
+    NAME="output" PATH="/search_result.xhtml"
+    TARGET="rules:#search_result.xhtml" TITLE="search_result" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#add.xhtml" PATH="/add.xhtml"
+  SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#add.xhtml:0" NAME="item" PATH="/add.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="add_result::#add_result.xhtml" NAME="output"
+    PATH="/add_result.xhtml" TARGET="rules:#add_result.xhtml"
+    TITLE="add_result" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#add_result.xhtml" PATH="/add_result.xhtml"
+  SHAPE="240,145,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#delete.xhtml" PATH="/delete.xhtml"
+  SHAPE="32,241,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#delete.xhtml:0" NAME="item"
+   PATH="/delete.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="list_result::#delete_result.xhtml"
+    NAME="output" PATH="/delete_result.xhtml"
+    TARGET="rules:#delete_result.xhtml" TITLE="list_result" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#delete_result.xhtml"
+  PATH="/delete_result.xhtml" SHAPE="240,257,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
