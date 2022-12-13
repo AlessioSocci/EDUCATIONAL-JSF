@@ -124,7 +124,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     <dependency>
       <groupId>org.apache.cxf</groupId>
       <artifactId>cxf-core</artifactId>
-      <version>3.3.4</version>
+      <version>3.4.10</version>
     </dependency>
     <dependency>
       <groupId>org.apache.cxf</groupId>
